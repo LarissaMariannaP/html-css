@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>alinhamento vertical</title>
+
+    <style>
+        #fora-conteiner{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 93vh;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+
+        #dentro-conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            background-color: yellow;
+            width: 350px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fora-conteiner">
+        <div id="dentro-conteudo"> </div>
+    </div>
+</body>
+</html>
